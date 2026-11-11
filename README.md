@@ -1,32 +1,33 @@
-# React + TypeScript + Vite
+# Dondu — Donation Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dondu merupakan platform digital yang dirancang untuk memudahkan proses penggalangan dan penyaluran donasi. Platform ini menghubungkan donatur dengan pihak atau penerima yang membutuhkan bantuan melalui sistem donasi yang mudah diakses dan dikelola.
 
-Currently, two official plugins are available:
+Repository ini berisi source code **Frontend CMS Dondu**, yaitu aplikasi dashboard untuk mengelola data dan aktivitas pada platform Dondu.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+- **React** — Library untuk membangun antarmuka pengguna.
+- **TypeScript** — Menambahkan sistem tipe pada JavaScript.
+- **Vite** — Build tool dan development server.
+- **Tailwind CSS** — Utility-first CSS framework.
+- **Oxlint** — Tool untuk pemeriksaan kode.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+```text
+cms-dondu/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   ├── services/
+│   ├── types/
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
